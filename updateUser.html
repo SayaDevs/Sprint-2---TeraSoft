@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>SAYADEVS - EDITAR USUARIOS </title>
+    <title>SAYADEVS - ACTUALIZAR USUARIOS </title>
 
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -70,8 +70,8 @@
                         <h6 class="collapse-header">GESTIONAR USUARIOS:</h6>
                         <a class="collapse-item" href="usersList.html">Listar Usuarios</a>
                         <a class="collapse-item" href="addUser.html">Agregar Usuario</a>
-                        <a class="collapse-item" href="editUser.html">Editar Usuario</a>
-                     <!--    <a class="collapse-item" href="deleteUser.html">Eliminar Usuario</a> -->
+                        <a class="collapse-item" href="updateUser.html">Actualizar Usuario</a>
+                        <!--    <a class="collapse-item" href="deleteUser.html">Eliminar Usuario</a> -->
                     </div>
                 </div>
             </li>
@@ -137,7 +137,7 @@
                     </button>
 
                     <!-- Topbar Search -->
-                    <form
+                    <!-- <form
                         class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
                         <div class="input-group">
                             <input type="text" class="form-control bg-light border-0 small" placeholder="Buscar"
@@ -148,7 +148,7 @@
                                 </button>
                             </div>
                         </div>
-                    </form>
+                    </form> -->
 
                     <!-- Topbar Navbar -->
                     <ul class="navbar-nav ml-auto">
@@ -328,117 +328,141 @@
                 <div class="container-fluid">
 
                     <!-- Page Heading -->
-                    <h1 class="h3 mb-4 text-gray-800 center">Editar Usuario</h1>
+                    <h1 class="h3 mb-4 text-gray-800 center">Actualizar Usuario</h1>
 
                     <div class="row center">
                         <div class="col-lg-6 ">
                             <form class="user form-control-user">
-                                <div class="form-group row"> 
-                                    
-                                    <div class="col-sm-6 mb-3 mb-sm-0 paddingForm">  Cédula/NIT:
-                                        <input type="text" class="form-control form-control-user"
-                                            value="73598745">
+                                <div class="form-group row">
+
+                                    <div class="col-sm-6 mb-3 mb-sm-0 paddingForm"> Cédula/NIT:
+                                        <input type="text" class="form-control form-control-user" value="73598745">
                                     </div>
-                                    <div class="col-sm-6 mb-3 mb-sm-0 paddingForm">  Nombre:
+                                    <div class="col-sm-6 mb-3 mb-sm-0 paddingForm"> Nombre:
                                         <input type="text" class="form-control form-control-user"
                                             value="Junior Zarta Zarate">
-                                    </div> 
-                                    <div class="col-sm-6 mb-3 mb-sm-0 paddingForm">  Correo Electrónico:
+                                    </div>
+                                    <div class="col-sm-6 mb-3 mb-sm-0 paddingForm"> Correo Electrónico:
                                         <input type="text" class="form-control form-control-user"
                                             value="juniorzartazarate@gmail.com">
                                     </div>
-                                    <div class="col-sm-6 mb-3 mb-sm-0 paddingForm">  Teléfono:
-                                        <input type="text" class="form-control form-control-user"
-                                        value="3005678901">
+                                    <div class="col-sm-6 mb-3 mb-sm-0 paddingForm"> Teléfono:
+                                        <input type="text" class="form-control form-control-user" value="3005678901">
                                     </div>
-                                    <div class="col-sm-6 mb-3 mb-sm-0 paddingForm">  Ciudad:
-                                        <input type="text" class="form-control form-control-user"
-                                        value="Bello">
+                                    <div class="col-sm-6 mb-3 mb-sm-0 paddingForm"> Ciudad:
+                                        <input type="text" class="form-control form-control-user" value="Bello">
                                     </div>
 
-                                    <div class="col-sm-6 mb-3 mb-sm-0 paddingForm">  Dirección:
+                                    <div class="col-sm-6 mb-3 mb-sm-0 paddingForm"> Dirección:
                                         <input type="text" class="form-control form-control-user"
-                                        value="Diagonal 56 # 55-75">
+                                            value="Diagonal 56 # 55-75">
                                     </div>
-                                    <div class="col-sm-6 mb-3 mb-sm-0 paddingForm ">  Rol:
-                                        <select name="rol" id="rol" >
-                                        <option value="seleccionar">Seleccionar</option>
-                                        <option value="admin">Administrador</option>
-                                        <option value="vendedor">Vendedor</option>
+                                    <div class="col-sm-6 mb-3 mb-sm-0 paddingForm "> Rol:
+                                        <select name="rol" id="rol">
+                                            <option value="seleccionar">Seleccionar</option>
+                                            <option value="admin">Administrador</option>
+                                            <option value="vendedor">Vendedor</option>
                                         </select>
+                                    </div>
+
+                                    <div class="col-sm-6 mb-3 mb-sm-0 paddingForm "> Estado:
+                                        <select name="estado" id="Estado">
+                                            <option value="seleccionar">Seleccionar</option>
+                                            <option value="autorizado">Autorizado</option>
+                                            <option value="noautorizado">No Autorizado</option>
+                                            <option value="pendiente">Pendiente</option>
+                                        </select>
+                                    </div>
                                 </div>
+
+                                <!-- Botón de Actualizar-->
+                                <div class="container">
+                                    <br>
+                                    <a class="container btn btn-primary btnSmall centerBtn btn  btn-user btn-block" href="#"
+                                       data-toggle="modal" data-target="#vistaActualizarUsuario">
+                                        Actualizar
+                                    </a>
                                 
-                                <div class="col-sm-6 mb-3 mb-sm-0 paddingForm ">  Estado:
-                                    <select name="estado" id="Estado" >
-                                        <option value="seleccionar">Seleccionar</option>
-                                        <option value="autorizado">Autorizado</option>
-                                        <option value="noautorizado">No Autorizado</option>
-                                        <option value="pendiente">Pendiente</option>
-                                        </select>
+                        
+                                    <div class="fade" id="vistaActualizarUsuario" tabindex="-1" role="dialog"
+                                        aria-labelledby="modalUserUpdate" aria-hidden="true">
+                                        <div class="modal-dialog" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="modalUserUpdate">Actualizar Usuario</h5>
+                                                    <button class="close" type="button" data-dismiss="modal"
+                                                        aria-label="Close">
+                                                        <span aria-hidden="true">×</span>
+                                                    </button>
+                                                </div>
+                                                <!-- Contenido del Modal -->
+                                                <div class="modal-body">
+                                                    <p>¿Está seguro que desea actualizar el usuario: XYZ?</p>
+                                                </div>
+                                                <!--Footer -->
+                                                <div class="modal-footer">
+                                                    <button class="btn btn-secondary" type="button"
+                                                        data-dismiss="modal">Cancelar</button>
+                                                    <a class="btn btn-primary" href="usersList.html">Aceptar</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                                </div>
-                                <a href="usersList.html" class="btn btnSmall centerBtn btn-primary btn-user btn-block">
-                                    Actualizar
-                                </a>
-                                <hr>
-
-
                             </form>
                         </div>
                         <!-- /.container-fluid -->
 
+                        <!-- End of Main Content -->
                     </div>
-                    <!-- End of Main Content -->
-
-
+                    <!-- End of Content Wrapper -->
                 </div>
-                <!-- End of Content Wrapper -->
 
-            </div>
-            <footer class="sticky-footer bg-white down center">
-                <div class="container my-auto">
-                    <div class="copyright text-center my-auto">
-                        <span>Copyright &copy; Your Website 2020</span>
-                    </div>
-                </div>
-            </footer>
-            <!-- End of Page Wrapper -->
-
-            <!-- Scroll to Top Button-->
-            <a class="scroll-to-top rounded" href="#page-top">
-                <i class="fas fa-angle-up"></i>
-            </a>
-
-            <!-- Logout Modal-->
-            <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-                aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
-                            <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">×</span>
-                            </button>
-                        </div>
-                        <div class="modal-body">Select "Logout" below if you are ready to end your current session.
-                        </div>
-                        <div class="modal-footer">
-                            <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                            <a class="btn btn-primary" href="login.html">Logout</a>
+                <footer class="sticky-footer bg-white down center">
+                    <div class="container my-auto">
+                        <div class="copyright text-center my-auto">
+                            <span>Copyright &copy; Your Website 2020</span>
                         </div>
                     </div>
+                </footer>
+                <!-- End of Page Wrapper -->
+
+                <!-- Scroll to Top Button-->
+                <a class="scroll-to-top rounded" href="#page-top">
+                    <i class="fas fa-angle-up"></i>
+                </a>
+
+                        
+                <!-- Logout Modal-->
+                    <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Cerrar Sesión</h5>
+                                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">×</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">Seleccione el botón "Cerrar Sesión" que aparece a continuación para finalizar‎.</div>
+                                <div class="modal-footer">
+                                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancelar</button>
+                                    <a class="btn btn-primary" href="login.html">Cerrar Sesión</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
 
-            <!-- Bootstrap core JavaScript-->
-            <script src="vendor/jquery/jquery.min.js"></script>
-            <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+                <!-- Bootstrap core JavaScript-->
+                <script src="vendor/jquery/jquery.min.js"></script>
+                <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-            <!-- Core plugin JavaScript-->
-            <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+                <!-- Core plugin JavaScript-->
+                <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
-            <!-- Custom scripts for all pages-->
-            <script src="js/sb-admin-2.min.js"></script>
+                <!-- Custom scripts for all pages-->
+                <script src="js/sb-admin-2.min.js"></script>
 
 </body>
 

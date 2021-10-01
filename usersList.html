@@ -73,8 +73,8 @@
                         <h6 class="collapse-header">GESTIONAR USUARIOS:</h6>
                         <a class="collapse-item" href="usersList.html">Listar Usuarios</a>
                         <a class="collapse-item" href="addUser.html">Agregar Usuario</a>
-                        <a class="collapse-item" href="editUser.html">Editar Usuario</a>
-                     <!--    <a class="collapse-item" href="deleteUser.html">Eliminar Usuario</a> -->
+                        <a class="collapse-item" href="updateUser.html">Actualizar Usuario</a>
+                        <!--    <a class="collapse-item" href="deleteUser.html">Eliminar Usuario</a> -->
                     </div>
                 </div>
             </li>
@@ -334,20 +334,20 @@
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
                         <h1 class="h3 mb-0 text-gray-800">Listar Usuarios</h1>
                     </div>
-                    
+
 
                     <!-- DataTales Example -->
                     <!-- <div class="card shadow mb-4"> </div>
                     <div class="input-group-append">  -->
-                     
-                        <div>
-                            <a href="addUser.html" class="btn btn-primary btn-circle btn-sm">
-                                <i href="addUser.html" class="fa fa-plus-circle fa-2x" aria-hidden="true"></i>
-    
-                            </a>
-                        </div>
 
-                        <!-- <a href="#" class="btn btn-primary btn-circle btn-sm">
+                    <div>
+                        <a href="addUser.html" class="btn btn-primary btn-circle btn-sm">
+                            <i href="addUser.html" class="fa fa-plus-circle fa-2x" aria-hidden="true"></i>
+
+                        </a>
+                    </div>
+
+                    <!-- <a href="#" class="btn btn-primary btn-circle btn-sm">
                             <i class="fa fa-plus-circle fa-2x" aria-hidden="true"></i> 
                         </a>
  
@@ -359,16 +359,17 @@
                             <i class="fa fa-plus-circle fa-2x" aria-hidden="true"></i>
                             
                        </a> -->
-                    
+
 
                     <!-- </div> -->
                     <div class="card-body">
-                        
+
                         <div class="table-responsive">
-                            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0" style="text-align:center">
+                            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0"
+                                style="text-align:center">
                                 <thead>
                                     <tr>
-                                        <th>Cédula / NIT</th> 
+                                        <th>Cédula / NIT</th>
                                         <th>Nombre</th>
                                         <th>Email</th>
                                         <th>Teléfono</th>
@@ -379,7 +380,7 @@
                                         <th>Acción</th>
                                     </tr>
                                 </thead>
-                               <!--  <tfoot>
+                                <!--  <tfoot>
                                     <tr>
                                         <th>Name</th>
                                         <th>Position</th>
@@ -391,7 +392,7 @@
                                 </tfoot> -->
                                 <tbody>
                                     <tr>
-                                        <td>1148526378</td> 
+                                        <td>1148526378</td>
                                         <td>Pepita Perez</td>
                                         <td>pepitaperez@gmail.com</td>
                                         <td>3152648759</td>
@@ -400,14 +401,16 @@
                                         <td>Administrador</td>
                                         <td>Activo</td>
                                         <td>
-                                            <a href="#" class="btn btn-primary btn-circle btn-sm">
+                                            <a href="updateUser.html" class="btn btn-primary btn-circle btn-sm">
                                                 <span class="fas fa-pencil-alt fa-lg" aria-hidden="true"></span>
-                                            </a> 
-                                            <a href="#" onclick="showEliminar()" 
-                                                class="btn btn-primary btn-circle btn-sm">
-                                                <span class="fa fa-trash fa-lg" aria-hidden="true"></span>  
-                                            </a>   
-                                    </td>
+                                            </a>
+                                            
+                                            <a href="#" class="btn btn-primary btn-circle btn-sm" >
+                                                <span class="fa fa-trash fa-lg" aria-hidden="true"></span>
+                                            </a>
+
+                                
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td>125426895</td>
@@ -419,13 +422,49 @@
                                         <td>Vendedor</td>
                                         <td>Activo</td>
                                         <td>
-                                            <a href="#" class="btn btn-primary btn-circle btn-sm">
+                                            <a href="updateUser.html" class="btn btn-primary btn-circle btn-sm">
                                                 <span class="fas fa-pencil-alt fa-lg" aria-hidden="true"></span>
-                                            </a> 
-                                            <a href="#" onclick="showEliminar()"
-                                                class="btn btn-primary btn-circle btn-sm">
-                                                <span class="fa fa-trash fa-lg" aria-hidden="true"></span>  
                                             </a>
+
+                                            <a href="#" class="btn btn-primary btn-circle btn-sm" >
+                                                <span class="fa fa-trash fa-lg" aria-hidden="true"></span>
+                                            </a>
+
+                                    <!--AQUI EMPIEZAA LO QUE INTENTÉ HACER CON EL ÍCONO DE ELIMINAR-->    
+                               <!--         <div class="container-sm">
+                                                <br>
+                                            <a href="#" class="btn btn-primary btn-circle btn-sm" data-toggle="modal"
+                                                data-target="#vistaEliminarUsuario">
+                                                <span class="fa fa-trash fa-lg" aria-hidden="true"></span>
+                                            </a>
+
+                                            <div class="fade" id="vistaEliminarUsuario" tabindex="-1" role="dialog"
+                                                aria-labelledby="modalUserDelete" aria-hidden="true">
+                                                <div class="modal-dialog" role="document">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <h5 class="modal-title" id="modalUserDelete">Actualizar
+                                                                Usuario</h5>
+                                                            <button class="close" type="button" data-dismiss="modal"
+                                                                aria-label="Close">
+                                                                <span aria-hidden="true">×</span>
+                                                            </button>
+                                                        </div>
+                                                        <!-- Contenido del Modal -->
+                                            <!--         <div class="modal-body">
+                                                            <p>¿Está seguro que desea eliminar el usuario: XYZ?</p>
+                                                        </div>
+                                                        <!--Footer -->
+                                        <!--            <div class="modal-footer">
+                                                            <button class="btn btn-secondary" type="button"
+                                                                data-dismiss="modal">Cancelar</button>
+                                                            <a class="btn btn-primary" href="usersList.html">Aceptar</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                      AQUÍ TERMINA  -->
+
                                         </td>
                                     </tr>
 
@@ -438,19 +477,15 @@
                                         <td>Diagonal 70 manzana 2 casa 20</td>
                                         <td>Vendedor</td>
                                         <td>Activo</td>
-					                    <td>
-                                            <a href="#" class="btn btn-primary btn-circle btn-sm">
+                                        <td>
+                                            <a href="updateUser.html" class="btn btn-primary btn-circle btn-sm">
                                                 <span class="fas fa-pencil-alt fa-lg" aria-hidden="true"></span>
-                                            </a> 
-                                            <a href="#" onclick="showEliminar()"
-                                                class="btn btn-primary btn-circle btn-sm">
-                                                <span class="fa fa-trash fa-lg" aria-hidden="true"></span>  
                                             </a>
-                                        </td>
-				                    </tr>
-
-                                   
-                                    
+                                           
+                                            <a href="#" class="btn btn-primary btn-circle btn-sm" >
+                                                <span class="fa fa-trash fa-lg" aria-hidden="true"></span>
+                                            </a>
+                                    </tr> 
                                 </tbody>
                             </table>
                         </div>
@@ -488,27 +523,22 @@
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+                    <h5 class="modal-title" id="exampleModalLabel">Cerrar Sesión</h5>
                     <button class="close" type="button" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">×</span>
                     </button>
                 </div>
-                <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+                <div class="modal-body">Seleccione el botón "Cerrar Sesión" que aparece a continuación para finalizar‎.
+                </div>
                 <div class="modal-footer">
-                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                    <a class="btn btn-primary" href="login.html">Logout</a>
+                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancelar</button>
+                    <a class="btn btn-primary" href="login.html">Cerrar Sesión</a>
                 </div>
             </div>
         </div>
     </div>
 
-    <script type="text/javascript">
-        function showEliminar() {
-            if (confirm('¿Quieres eliminar este Usuario?')) {
-                alert("Este Usuario será eliminado")
-            }
-        }
-    </script>
+
 
     <!-- Bootstrap core JavaScript-->
     <script src="vendor/jquery/jquery.min.js"></script>

@@ -70,7 +70,7 @@
                         <h6 class="collapse-header">GESTIONAR USUARIOS:</h6>
                         <a class="collapse-item" href="usersList.html">Listar Usuarios</a>
                         <a class="collapse-item" href="addUser.html">Agregar Usuario</a>
-                        <a class="collapse-item" href="editUser.html">Editar Usuario</a>
+                        <a class="collapse-item" href="updateUser.html">Actualizar Usuario</a>
                         <!-- <a class="collapse-item" href="deleteUser.html">Eliminar Usuario</a> -->
                     </div>
                 </div>
@@ -137,7 +137,7 @@
                     </button>
 
                     <!-- Topbar Search -->
-                    <form
+                    <!-- <form
                         class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
                         <div class="input-group">
                             <input type="text" class="form-control bg-light border-0 small" placeholder="Buscar"
@@ -148,33 +148,32 @@
                                 </button>
                             </div>
                         </div>
-                    </form>
+                    </form> -->
 
                     <!-- Topbar Navbar -->
                     <ul class="navbar-nav ml-auto">
 
                         <!-- Nav Item - Search Dropdown (Visible Only XS) -->
-                        <li class="nav-item dropdown no-arrow d-sm-none">
+                        <!-- <li class="nav-item dropdown no-arrow d-sm-none">
                             <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <i class="fas fa-search fa-fw"></i>
-                            </a>
-                            <!-- Dropdown - Messages -->
-                            <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in"
-                                aria-labelledby="searchDropdown">
-                                <form class="form-inline mr-auto w-100 navbar-search">
-                                    <div class="input-group">
-                                        <input type="text" class="form-control bg-light border-0 small"
-                                            placeholder="Search for..." aria-label="Search"
-                                            aria-describedby="basic-addon2">
-                                        <div class="input-group-append">
-                                            <button class="btn btn-primary" type="button">
-                                                <i class="fas fa-search fa-sm"></i>
-                                            </button>
-                                        </div>
+                            </a> -->
+                        <!-- Dropdown - Messages -->
+                        <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in"
+                            aria-labelledby="searchDropdown">
+                            <form class="form-inline mr-auto w-100 navbar-search">
+                                <div class="input-group">
+                                    <input type="text" class="form-control bg-light border-0 small"
+                                        placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
+                                    <div class="input-group-append">
+                                        <button class="btn btn-primary" type="button">
+                                            <i class="fas fa-search fa-sm"></i>
+                                        </button>
                                     </div>
-                                </form>
-                            </div>
+                                </div>
+                            </form>
+                        </div>
                         </li>
 
                         <!-- Nav Item - Alerts -->
@@ -333,63 +332,81 @@
                     <div class="row center">
                         <div class="col-lg-6 ">
                             <form class="user form-control-user">
-                                <div class="form-group row"> 
-                                    
-                                    <div class="col-sm-6 mb-3 mb-sm-0 paddingForm">  Cédula/NIT:
-                                        <input type="text" class="form-control form-control-user"
-                                            value=" ">
+                                <div class="form-group row">
+
+                                    <div class="col-sm-6 mb-3 mb-sm-0 paddingForm"> Cédula/NIT:
+                                        <input type="text" class="form-control form-control-user" value=" ">
                                     </div>
-                                    <div class="col-sm-6 mb-3 mb-sm-0 paddingForm">  Nombre:
-                                        <input type="text" class="form-control form-control-user"
-                                            value=" ">
-                                    </div> 
-                                    <div class="col-sm-6 mb-3 mb-sm-0 paddingForm">  Correo Electrónico:
-                                        <input type="text" class="form-control form-control-user"
-                                            value=" ">
+                                    <div class="col-sm-6 mb-3 mb-sm-0 paddingForm"> Nombre:
+                                        <input type="text" class="form-control form-control-user" value=" ">
                                     </div>
-                                    <div class="col-sm-6 mb-3 mb-sm-0 paddingForm">  Teléfono:
-                                        <input type="text" class="form-control form-control-user"
-                                        value=" ">
+                                    <div class="col-sm-6 mb-3 mb-sm-0 paddingForm"> Correo Electrónico:
+                                        <input type="text" class="form-control form-control-user" value=" ">
                                     </div>
-                                    <div class="col-sm-6 mb-3 mb-sm-0 paddingForm">  Ciudad:
-                                        <input type="text" class="form-control form-control-user"
-                                        value="">
+                                    <div class="col-sm-6 mb-3 mb-sm-0 paddingForm"> Teléfono:
+                                        <input type="text" class="form-control form-control-user" value=" ">
+                                    </div>
+                                    <div class="col-sm-6 mb-3 mb-sm-0 paddingForm"> Ciudad:
+                                        <input type="text" class="form-control form-control-user" value="">
                                     </div>
 
-                                    <div class="col-sm-6 mb-3 mb-sm-0 paddingForm">  Dirección:
-                                        <input type="text" class="form-control form-control-user"
-                                        value=" ">
+                                    <div class="col-sm-6 mb-3 mb-sm-0 paddingForm"> Dirección:
+                                        <input type="text" class="form-control form-control-user" value=" ">
                                     </div>
-                                    <div class="col-sm-6 mb-3 mb-sm-0 paddingForm ">  Rol:
-                                            <select name="rol" id="rol" >
+                                    <div class="col-sm-6 mb-3 mb-sm-0 paddingForm "> Rol:
+                                        <select name="rol" id="rol">
                                             <option value="seleccionar">Seleccionar</option>
                                             <option value="admin">Administrador</option>
                                             <option value="vendedor">Vendedor</option>
-                                            </select>
+                                        </select>
                                     </div>
-                                    
-                                    <div class="col-sm-6 mb-3 mb-sm-0 paddingForm ">  Estado:
-                                        <select name="estado" id="Estado" >
+
+                                    <div class="col-sm-6 mb-3 mb-sm-0 paddingForm "> Estado:
+                                        <select name="estado" id="Estado">
                                             <option value="seleccionar">Seleccionar</option>
                                             <option value="autorizado">Autorizado</option>
                                             <option value="noautorizado">No Autorizado</option>
                                             <option value="pendiente">Pendiente</option>
-                                            </select>
+                                        </select>
                                     </div>
                                 </div>
-                                <a href="login.html" class="btn btnSmall centerBtn btn-primary btn-user btn-block">
-                                    Agregar 
-                                </a>
-                                <hr>
 
+                                <!-- Botón de Actualizar-->
+                                <div class="container">
+                                    <br>
+
+                                    <a class="container btn btn-primary btnSmall centerBtn btn  btn-user btn-block"
+                                        href="#" data-toggle="modal" data-target="#vistaAgregarUsuario">
+
+                                        Agregar
+                                    </a>
+                                    <div class="fade" id="vistaAgregarUsuario" tabindex="-1" role="dialog"
+                                        aria-labelledby="modalUserAdd" aria-hidden="true">
+                                        <div class="modal-dialog" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="modalUserAdd">Agregar Usuario</h5>
+                                                    <button class="close" type="button" data-dismiss="modal"
+                                                        aria-label="Close">
+                                                        <span aria-hidden="true">×</span>
+                                                    </button>
+                                                </div>
+                                                <!-- Contenido del Modal -->
+                                                <div class="modal-body">
+                                                    <p>El usuario se ha agregado correctamente.</p>
+                                                    <p>¿Desea continuar agregando usuarios?</p>
+                                                </div>
+                                                <!--Footer -->
+                                                <div class="modal-footer">
+                                                    <a class="btn btn-primary" href="usersList.html">Cancelar</a>
+                                                    <a class="btn btn-primary" data-dismiss="modal">Aceptar</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
 
                             </form>
-
-
-
-
-
-
 
                         </div>
                         <!-- /.container-fluid -->
@@ -422,16 +439,16 @@
                 <div class="modal-dialog" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+                            <h5 class="modal-title" id="exampleModalLabel">Cerrar Sesión</h5>
                             <button class="close" type="button" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">×</span>
                             </button>
                         </div>
-                        <div class="modal-body">Select "Logout" below if you are ready to end your current session.
-                        </div>
+                        <div class="modal-body">Seleccione el botón "Cerrar Sesión" que aparece a continuación para
+                            finalizar‎.</div>
                         <div class="modal-footer">
-                            <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                            <a class="btn btn-primary" href="login.html">Logout</a>
+                            <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancelar</button>
+                            <a class="btn btn-primary" href="login.html">Cerrar Sesión</a>
                         </div>
                     </div>
                 </div>
