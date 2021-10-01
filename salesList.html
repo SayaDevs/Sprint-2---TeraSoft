@@ -139,20 +139,7 @@
                         <i class="fa fa-bars"> </i>
                     </button>
 
-                    <!-- Topbar Search -->
-                    <form
-                        class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
-                        <div class="input-group">
-                            <!-- <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..."
-                                aria-label="Search" aria-describedby="basic-addon2"> -->
-                            <!-- <div class="input-group-append">
-                                <button class="btn btn-primary" type="button">
-                                    <i class="fas fa-search fa-sm"></i>
-                                </button>
-                            </div> -->
-                        </div>
-                    </form>
-
+                   
                     <!-- Topbar Navbar -->
                     <ul class="navbar-nav ml-auto">
 
@@ -378,6 +365,7 @@
                                         <th>Cantidad</th>
                                         <th>Valor total</th>
                                         <th>Vendedor</th>
+                                        <th>Estado</th>
                                         <th>Acción</th>
                                     </tr>
                                 </thead>
@@ -401,12 +389,13 @@
                                         <td>1</td>
                                         <td>42.990.000</td>
                                         <td>Carla Caicedo</td>
+                                        <td>En Proceso</td>
 
                                         <td>
                                             <a href="#" class="btn btn-primary btn-circle btn-sm">
                                                 <span class="fas fa-pencil-alt fa-lg" aria-hidden="true"></span>
                                             </a>
-                                            <a href="#" onclick="showEliminar()" class="btn btn-primary btn-circle btn-sm">
+                                            <a href="#" class="btn btn-primary btn-circle btn-sm data-target="#logoutModal1" data-toggle="modal"">
                                                 <span class="fa fa-trash fa-lg" aria-hidden="true"></span>
                                             </a>
                                         </td>
@@ -420,6 +409,7 @@
                                         <td>1</td>
                                         <td>42.990.000</td>
                                         <td>Carla Caicedo</td>
+                                        <td>Cancelada</td>
 
                                         <td>
                                             <a href="#" class="btn btn-primary btn-circle btn-sm">
@@ -440,6 +430,7 @@
                                         <td>1</td>
                                         <td>45.990.000</td>
                                         <td>Ramiro Gonzalez</td>
+                                        <td>En Proceso</td>
 
                                         <td>
                                             <a href="#" class="btn btn-primary btn-circle btn-sm">
@@ -491,27 +482,21 @@
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+                    <h5 class="modal-title" id="exampleModalLabel">Cerrar Sesión</h5>
                     <button class="close" type="button" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">×</span>
                     </button>
                 </div>
-                <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+                <div class="modal-body">Seleccione el botón "Cerrar Sesión" que aparece a continuación para finalizar‎.</div>
                 <div class="modal-footer">
-                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                    <a class="btn btn-primary" href="login.html">Logout</a>
+                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancelar</button>
+                    <a class="btn btn-primary" href="login.html">Cerrar Sesión</a>
                 </div>
             </div>
         </div>
     </div>
 
-    <script type="text/javascript">
-        function showEliminar() {
-            if (confirm('¿Quieres eliminar esta venta?')) {
-                alert("Esta venta será eliminada")
-            }
-        }
-    </script>
+
 
     <!-- Bootstrap core JavaScript-->
     <script src="vendor/jquery/jquery.min.js"></script>
