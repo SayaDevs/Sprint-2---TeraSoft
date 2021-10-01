@@ -61,11 +61,11 @@
                                             id="exampleRepeatPassword" placeholder="Confirma contraseña">
                                     </div>
                                 </div>
-                                <a href="login.html" class="btn btn-primary btn-user btn-block" onclick="alert('Su cuenta se encuentra en estado: PENDIENTE, será confirmada mediante correo electrónico');" >
+                                <a href="login.html" class="btn btn-primary btn-user btn-block"  data-toggle="modal" data-target="#logoutModal">
                                     Regístrate   
                                 </a>
                                 <hr>
-                                <a href="index.html" class="btn btn-google btn-user btn-block" onclick="alert('Su cuenta se encuentra en estado: PENDIENTE, será confirmada mediante correo electrónico');">
+                                <a href="index.html" class="btn btn-google btn-user btn-block" data-toggle="modal" data-target="#logoutModal">
                                     <i class="fab fa-google fa-fw"></i> Regístrate con Gmail
                                 </a>
                                
@@ -86,6 +86,25 @@
 
     </div>
 
+<!-- Register Modal-->
+<div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Estado cuenta</h5>
+              <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">×</span>
+              </button>
+          </div>
+          <div class="modal-body">La cuenta se encuentra en estado: PENDIENTE, se confirmará por correo electrónico.</div>
+          <div class="modal-footer">
+                
+              <a class="btn btn-primary" href="login.html">Aceptar</a>
+          </div>
+      </div>
+  </div>
+</div>
     <!-- Bootstrap core JavaScript-->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>

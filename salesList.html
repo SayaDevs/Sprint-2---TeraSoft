@@ -360,7 +360,7 @@
                                         <th>ID Venta</th>
                                         <th>Fecha de Venta</th>
                                         <th>Nombre Cliente</th>
-                                        <th>Cédula Cliente</th>
+                                        <th>Cédula/NIT Cliente</th>
                                         <th>Producto</th>
                                         <th>Cantidad</th>
                                         <th>Valor total</th>
@@ -395,7 +395,7 @@
                                             <a href="#" class="btn btn-primary btn-circle btn-sm">
                                                 <span class="fas fa-pencil-alt fa-lg" aria-hidden="true"></span>
                                             </a>
-                                            <a href="#" class="btn btn-primary btn-circle btn-sm data-target="#logoutModal1" data-toggle="modal"">
+                                            <a href="#"  class="btn btn-primary btn-circle btn-sm" data-target="#logoutModal1" data-toggle="modal">
                                                 <span class="fa fa-trash fa-lg" aria-hidden="true"></span>
                                             </a>
                                         </td>
@@ -415,7 +415,7 @@
                                             <a href="#" class="btn btn-primary btn-circle btn-sm">
                                                 <span class="fas fa-pencil-alt fa-lg" aria-hidden="true"></span>
                                             </a>
-                                            <a href="#" onclick="showEliminar()" class="btn btn-primary btn-circle btn-sm">
+                                            <a href="#"  class="btn btn-primary btn-circle btn-sm" data-target="#logoutModal1" data-toggle="modal">
                                                 <span class="fa fa-trash fa-lg" aria-hidden="true"></span>
                                             </a>
                                         </td>
@@ -436,8 +436,7 @@
                                             <a href="#" class="btn btn-primary btn-circle btn-sm">
                                                 <span class="fas fa-pencil-alt fa-lg" aria-hidden="true"></span>
                                             </a>
-                                            <a href="#" onclick="showEliminar()"
-                                                class="btn btn-primary btn-circle btn-sm">
+                                            <a href="#"  class="btn btn-primary btn-circle btn-sm" data-target="#logoutModal1" data-toggle="modal" >
                                                 <span class="fa fa-trash fa-lg" aria-hidden="true"></span>
                                             </a>
                                         </td>
@@ -496,7 +495,44 @@
         </div>
     </div>
 
+<!-- C Delete Modal-->
+<div class="modal fade" id="logoutModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+aria-hidden="true">
+<div class="modal-dialog" role="document">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Eliminar venta</h5>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">×</span>
+            </button>
+        </div>
+        <div class="modal-body">La venta fue eliminada de forma permanente</div>
+        <div class="modal-footer">
+            <a class="btn btn-primary" href="salesList.html">Aceptar</a>
+        </div>
+    </div>
+</div>
+</div>
 
+   <!-- Delete Modal-->
+    <div class="modal fade" id="logoutModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Eliminar venta</h5>
+                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal-body">¿Desea eliminar esta venta de forma permanente?</div>
+            <div class="modal-footer">
+                  <button class="btn btn-secondary" type="button" href="salesList.html" data-dismiss="modal">Cancelar</button>
+                <a class="btn btn-danger" data-target="#logoutModal2" data-toggle="modal" data-dismiss="modal" aria-label="Close">Aceptar</a>
+            </div>
+        </div>
+    </div>
+  </div>
 
     <!-- Bootstrap core JavaScript-->
     <script src="vendor/jquery/jquery.min.js"></script>
