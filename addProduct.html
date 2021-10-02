@@ -109,7 +109,7 @@
                     <a class="collapse-item" href="productsList.html">Listar Producto</a>
                     <a class="collapse-item" href="addProduct.html">Agregar Producto</a>
                     <a class="collapse-item" href="editProduct.html">Editar Producto</a>
-                    <a class="collapse-item" href="deleteProduct.html">Eliminar Producto</a>
+                    <!--<a class="collapse-item" href="deleteProduct.html">Eliminar Producto</a>-->
                 </div>
             </div>
         </li>
@@ -136,7 +136,7 @@
                 </button>
 
                 <!-- Topbar Search -->
-                <form
+                <!--<form
                     class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
                     <div class="input-group">
                         <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..."
@@ -147,7 +147,7 @@
                             </button>
                         </div>
                     </div>
-                </form>
+                </form>-->
 
                 <!-- Topbar Navbar -->
                 <ul class="navbar-nav ml-auto">
@@ -333,177 +333,57 @@
                     <!-- Page Heading -->
                     <h1 class="h3 mb-4 text-gray-800">Agregar Productos</h1>
 
-                    <div class="row">
+                    <div class="row center">
 
                         <div class="col-lg-6">
 
-                            <!-- Circle Buttons -->
-                            <div class="card shadow mb-4">
-                                <div class="card-header py-3">
-                                    <h6 class="m-0 font-weight-bold text-primary">Circle Buttons</h6>
-                                </div>
-                                <div class="card-body">
-                                    <p>Use Font Awesome Icons (included with this theme package) along with the circle
-                                        buttons as shown in the examples below!</p>
-                                    <!-- Circle Buttons (Default) -->
-                                    <div class="mb-2">
-                                        <code>.btn-circle</code>
+                            <form class="user form-control-user">
+                                <div class="form-group row">
+
+                                    <div class="col-sm-6 mb-3 mb-sm-0 paddingForm"> ID:
+                                        <input type="text" class="form-control form-control-user" value=" ">
                                     </div>
-                                    <a href="#" class="btn btn-primary btn-circle">
-                                        <i class="fab fa-facebook-f"></i>
-                                    </a>
-                                    <a href="#" class="btn btn-success btn-circle">
-                                        <i class="fas fa-check"></i>
-                                    </a>
-                                    <a href="#" class="btn btn-info btn-circle">
-                                        <i class="fas fa-info-circle"></i>
-                                    </a>
-                                    <a href="#" class="btn btn-warning btn-circle">
-                                        <i class="fas fa-exclamation-triangle"></i>
-                                    </a>
-                                    <a href="#" class="btn btn-danger btn-circle">
-                                        <i class="fas fa-trash"></i>
-                                    </a>
-                                    <!-- Circle Buttons (Small) -->
-                                    <div class="mt-4 mb-2">
-                                        <code>.btn-circle .btn-sm</code>
+
+                                    <div class="col-sm-6 mb-3 mb-sm-0 paddingForm"> Nombre:
+                                        <input type="text" class="form-control form-control-user" value=" ">
                                     </div>
-                                    <a href="#" class="btn btn-primary btn-circle btn-sm">
-                                        <i class="fab fa-facebook-f"></i>
-                                    </a>
-                                    <a href="#" class="btn btn-success btn-circle btn-sm">
-                                        <i class="fas fa-check"></i>
-                                    </a>
-                                    <a href="#" class="btn btn-info btn-circle btn-sm">
-                                        <i class="fas fa-info-circle"></i>
-                                    </a>
-                                    <a href="#" class="btn btn-warning btn-circle btn-sm">
-                                        <i class="fas fa-exclamation-triangle"></i>
-                                    </a>
-                                    <a href="#" class="btn btn-danger btn-circle btn-sm">
-                                        <i class="fas fa-trash"></i>
-                                    </a>
-                                    <!-- Circle Buttons (Large) -->
-                                    <div class="mt-4 mb-2">
-                                        <code>.btn-circle .btn-lg</code>
+
+                                    <div class="col-sm-6 mb-3 mb-sm-0 paddingForm"> Cantidad:
+                                        <input type="number" class="form-control form-control-user" value=" ">
                                     </div>
-                                    <a href="#" class="btn btn-primary btn-circle btn-lg">
-                                        <i class="fab fa-facebook-f"></i>
-                                    </a>
-                                    <a href="#" class="btn btn-success btn-circle btn-lg">
-                                        <i class="fas fa-check"></i>
-                                    </a>
-                                    <a href="#" class="btn btn-info btn-circle btn-lg">
-                                        <i class="fas fa-info-circle"></i>
-                                    </a>
-                                    <a href="#" class="btn btn-warning btn-circle btn-lg">
-                                        <i class="fas fa-exclamation-triangle"></i>
-                                    </a>
-                                    <a href="#" class="btn btn-danger btn-circle btn-lg">
-                                        <i class="fas fa-trash"></i>
-                                    </a>
-                                </div>
-                            </div>
 
-                            <!-- Brand Buttons -->
-                            <div class="card shadow mb-4">
-                                <div class="card-header py-3">
-                                    <h6 class="m-0 font-weight-bold text-primary">Brand Buttons</h6>
-                                </div>
-                                <div class="card-body">
-                                    <p>Google and Facebook buttons are available featuring each company's respective
-                                        brand color. They are used on the user login and registration pages.</p>
-                                    <p>You can create more custom buttons by adding a new color variable in the
-                                        <code>_variables.scss</code> file and then using the Bootstrap button variant
-                                        mixin to create a new style, as demonstrated in the <code>_buttons.scss</code>
-                                        file.</p>
-                                    <a href="#" class="btn btn-google btn-block"><i class="fab fa-google fa-fw"></i>
-                                        .btn-google</a>
-                                    <a href="#" class="btn btn-facebook btn-block"><i
-                                            class="fab fa-facebook-f fa-fw"></i> .btn-facebook</a>
+                                    <div class="col-sm-6 mb-3 mb-sm-0 paddingForm"> Valor unitario:
+                                        <input type="number" class="form-control form-control-user" value=" ">
+                                    </div>
+
+                                    <div class="col-sm-6 mb-3 mb-sm-0 paddingForm "> Estado:
+                                        <select name="estado" id="Estado">
+                                            <option value="seleccionar">Seleccionar</option>
+                                            <option value="autorizado">Disponible</option>
+                                            <option value="noautorizado">No Disponible</option>
+                                        </select>
+                                    </div>
 
                                 </div>
-                            </div>
 
-                        </div>
-
-                        <div class="col-lg-6">
-
-                            <div class="card shadow mb-4">
-                                <div class="card-header py-3">
-                                    <h6 class="m-0 font-weight-bold text-primary">Split Buttons with Icon</h6>
+                                <div class="col-sm-12">
+                                    <label for="Textarea1">Descripcion de producto</label>
+                                    <textarea class="form-control" id="Textarea1" rows="4"></textarea>
                                 </div>
-                                <div class="card-body">
-                                    <p>Works with any button colors, just use the <code>.btn-icon-split</code> class and
-                                        the markup in the examples below. The examples below also use the
-                                        <code>.text-white-50</code> helper class on the icons for additional styling,
-                                        but it is not required.</p>
-                                    <a href="#" class="btn btn-primary btn-icon-split">
-                                        <span class="icon text-white-50">
-                                            <i class="fas fa-flag"></i>
-                                        </span>
-                                        <span class="text">Split Button Primary</span>
-                                    </a>
-                                    <div class="my-2"></div>
-                                    <a href="#" class="btn btn-success btn-icon-split">
-                                        <span class="icon text-white-50">
-                                            <i class="fas fa-check"></i>
-                                        </span>
-                                        <span class="text">Split Button Success</span>
-                                    </a>
-                                    <div class="my-2"></div>
-                                    <a href="#" class="btn btn-info btn-icon-split">
-                                        <span class="icon text-white-50">
-                                            <i class="fas fa-info-circle"></i>
-                                        </span>
-                                        <span class="text">Split Button Info</span>
-                                    </a>
-                                    <div class="my-2"></div>
-                                    <a href="#" class="btn btn-warning btn-icon-split">
-                                        <span class="icon text-white-50">
-                                            <i class="fas fa-exclamation-triangle"></i>
-                                        </span>
-                                        <span class="text">Split Button Warning</span>
-                                    </a>
-                                    <div class="my-2"></div>
-                                    <a href="#" class="btn btn-danger btn-icon-split">
-                                        <span class="icon text-white-50">
-                                            <i class="fas fa-trash"></i>
-                                        </span>
-                                        <span class="text">Split Button Danger</span>
-                                    </a>
-                                    <div class="my-2"></div>
-                                    <a href="#" class="btn btn-secondary btn-icon-split">
-                                        <span class="icon text-white-50">
-                                            <i class="fas fa-arrow-right"></i>
-                                        </span>
-                                        <span class="text">Split Button Secondary</span>
-                                    </a>
-                                    <div class="my-2"></div>
-                                    <a href="#" class="btn btn-light btn-icon-split">
-                                        <span class="icon text-gray-600">
-                                            <i class="fas fa-arrow-right"></i>
-                                        </span>
-                                        <span class="text">Split Button Light</span>
-                                    </a>
-                                    <div class="mb-4"></div>
-                                    <p>Also works with small and large button classes!</p>
-                                    <a href="#" class="btn btn-primary btn-icon-split btn-sm">
-                                        <span class="icon text-white-50">
-                                            <i class="fas fa-flag"></i>
-                                        </span>
-                                        <span class="text">Split Button Small</span>
-                                    </a>
-                                    <div class="my-2"></div>
-                                    <a href="#" class="btn btn-primary btn-icon-split btn-lg">
-                                        <span class="icon text-white-50">
-                                            <i class="fas fa-flag"></i>
-                                        </span>
-                                        <span class="text">Split Button Large</span>
-                                    </a>
-                                </div>
-                            </div>
 
+                                <!-- Botón de Actualizar-->
+                                <div class="container">
+                                    <br>
+
+                                    <a class="container btn btn-primary btnSmall centerBtn btn  btn-user btn-block"
+                                        href="#" data-toggle="modal" data-target="#registerModal">
+                                        Agregar
+                                    </a>
+
+                                </div>
+
+                            </form>
+                            
                         </div>
 
                     </div>
@@ -541,15 +421,39 @@
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+                    <h5 class="modal-title" id="exampleModalLabel">Seguro que quieres salir?</h5>
                     <button class="close" type="button" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">×</span>
                     </button>
                 </div>
-                <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+                <div class="modal-body">Selecciona "Salir" si estas seguro de terminar tu actual sesion.</div>
                 <div class="modal-footer">
-                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                    <a class="btn btn-primary" href="login.html">Logout</a>
+                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancelar</button>
+                    <a class="btn btn-primary" href="login.html">Salir</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Registro Modal-->
+    <div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Registro de Productos</h5>
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Su producto se ha registrado correctamente</p>
+                    <p>Si desea segir registrando producto seleccione "Agregar"</p>
+
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancelar</button>
+                    <a class="btn btn-primary" href="addProduct.html">Agregar</a>
                 </div>
             </div>
         </div>
