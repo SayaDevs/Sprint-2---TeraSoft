@@ -136,19 +136,7 @@
                         <i class="fa fa-bars"></i>
                     </button>
 
-                    <!-- Topbar Search -->
-                    <form
-                        class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
-                        <div class="input-group">
-                            <input type="text" class="form-control bg-light border-0 small" placeholder="Buscar"
-                                aria-label="Search" aria-describedby="basic-addon2">
-                            <div class="input-group-append">
-                                <button class="btn btn-primary" type="button">
-                                    <i class="fas fa-search fa-sm"></i>
-                                </button>
-                            </div>
-                        </div>
-                    </form>
+                   
 
                     <!-- Topbar Navbar -->
                     <ul class="navbar-nav ml-auto">
@@ -343,7 +331,7 @@
                                         <input type="text" class="form-control form-control-user"
                                             value="Junior Zarta">
                                     </div>
-                                    <div class="col-sm-6 mb-3 mb-sm-0 paddingForm">  Cédula:
+                                    <div class="col-sm-6 mb-3 mb-sm-0 paddingForm">  Cédula/NIT:
                                         <input type="number" class="form-control form-control-user"
                                             value="73598745">
                                     </div> 
@@ -360,23 +348,26 @@
                                         <input type="number" class="form-control form-control-user"
                                         value="45990000">
                                     </div>
-                                    <div class="col-sm-6 mb-3 mb-sm-0 paddingForm ">  Vendedor:
-                                        <input type="text" class="center form-control form-control-user "
-                                            value="Ramiro Gonzalez">
+                                    <div class="col-sm-6 mb-3 mb-sm-0 paddingForm"> Vendedor:
+                                        <select name="rol" id="rol">
+                                            <option>Ramiro Gonzalez</option>
+                                            <option>Carla Caicedo</option>
+
+                                        </select>
+                                    </div>
+                                    <div class="col-sm-6 mb-3 mb-sm-0 paddingForm"> Estado:
+                                        <select name="rol" id="rol">
+                                            <option>En proceso</option>
+                                            <option>Cancelada</option>
+                                            <option>Entregada</option>
+                                        </select>
                                     </div>
                                 </div>
-                                <a href="login.html" class="btn btnSmall centerBtn btn-primary btn-user btn-block">
-                                    Guardar
+                                <a href="salesList.html" class="btn btnSmall centerBtn btn-primary btn-user btn-block" data-target="#logoutModal1" data-toggle="modal">
+                                    Actualizar
                                 </a>
-                                <hr>
-
 
                             </form>
-
-
-
-
-
 
 
                         </div>
@@ -404,26 +395,43 @@
                 <i class="fas fa-angle-up"></i>
             </a>
 
-            <!-- Logout Modal-->
-            <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-                aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
-                            <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">×</span>
-                            </button>
-                        </div>
-                        <div class="modal-body">Select "Logout" below if you are ready to end your current session.
-                        </div>
-                        <div class="modal-footer">
-                            <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                            <a class="btn btn-primary" href="login.html">Logout</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+  <!-- Logout Modal-->
+  <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Cerrar Sesión</h5>
+              <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">×</span>
+              </button>
+          </div>
+          <div class="modal-body">Seleccione el botón "Cerrar Sesión" que aparece a continuación para finalizar‎.</div>
+          <div class="modal-footer">
+              <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancelar</button>
+              <a class="btn btn-primary" href="login.html">Cerrar Sesión</a>
+          </div>
+      </div>
+  </div>
+</div>
+
+<div class="modal fade" id="logoutModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Actualización de venta</h5>
+              <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">×</span>
+              </button>
+          </div>
+          <div class="modal-body">La venta se ha actualizado exitosamente</div>
+          <div class="modal-footer">
+              <a class="btn btn-primary" href="salesList.html">Aceptar</a>
+          </div>
+      </div>
+  </div>
+</div>
 
             <!-- Bootstrap core JavaScript-->
             <script src="vendor/jquery/jquery.min.js"></script>

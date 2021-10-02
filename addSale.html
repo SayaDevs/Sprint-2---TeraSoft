@@ -136,19 +136,7 @@
                         <i class="fa fa-bars"></i>
                     </button>
 
-                    <!-- Topbar Search -->
-                    <form
-                        class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
-                        <div class="input-group">
-                            <input type="text" class="form-control bg-light border-0 small" placeholder="Buscar"
-                                aria-label="Search" aria-describedby="basic-addon2">
-                            <div class="input-group-append">
-                                <button class="btn btn-primary" type="button">
-                                    <i class="fas fa-search fa-sm"></i>
-                                </button>
-                            </div>
-                        </div>
-                    </form>
+                    
 
                     <!-- Topbar Navbar -->
                     <ul class="navbar-nav ml-auto">
@@ -335,42 +323,45 @@
                             <form class="user form-control-user ">
                                 <div class="form-group row">
 
-                                    <div class="col-sm-6 mb-3 mb-sm-0 paddingForm">
+                                    <div class="col-sm-6 mb-3 mb-sm-0 paddingForm">Fecha venta:
                                         <input type="date" class="form-control form-control-user"
-                                            placeholder="Fecha venta" required>
+                                            placeholder="" required>
                                     </div>
 
-                                    <div class="col-sm-6 mb-3 mb-sm-0 paddingForm">
+                                    <div class="col-sm-6 mb-3 mb-sm-0 paddingForm"> Nombre del cliente:
                                         <input type="text" class="form-control form-control-user"
-                                            placeholder="Nombre del cliente" required>
+                                            placeholder="" required>
                                     </div>
-                                    <div class="col-sm-6 mb-3 mb-sm-0 paddingForm">
+                                    <div class="col-sm-6 mb-3 mb-sm-0 paddingForm">Cédula del cliente:
                                         <input type="number" class="form-control form-control-user"
-                                            placeholder="Cédula del cliente" required>
+                                            placeholder="" required>
                                     </div>
-                                    <div class="col-sm-6 mb-3 mb-sm-0 paddingForm">
+                                    <div class="col-sm-6 mb-3 mb-sm-0 paddingForm"> Producto:
                                         <input type="text" class="form-control form-control-user"
-                                            placeholder="Producto" required>
+                                            placeholder="" required>
                                     </div>
-                                    <div class="col-sm-6 mb-3 mb-sm-0 paddingForm">
+                                    <div class="col-sm-6 mb-3 mb-sm-0 paddingForm"> Cantidad:
                                         <input type="number" class="form-control form-control-user"
-                                            placeholder="Cantidad" required>
+                                            placeholder="" required>
                                     </div>
 
-                                    <div class="col-sm-6 mb-3 mb-sm-0 paddingForm">
+                                    <div class="col-sm-6 mb-3 mb-sm-0 paddingForm"> Valor total:
                                         <input type="number" class="form-control form-control-user"
-                                            placeholder="Valor total" required>
+                                            placeholder="" required>
                                     </div>
-                                    <div class="col-sm-6 mb-3 mb-sm-0 paddingForm">
-                                        <input type="text" class="form-control form-control-user"
-                                            placeholder="Vendedor" required>
+                                    <div class="col-sm-6 mb-3 mb-sm-0 paddingForm"> Vendedor:
+                                        <select name="rol" id="rol">
+                                            <option hidden selected>Selecciona </option>
+                                            <option>Carla Caicedo</option>
+                                            <option>Ramiro Gonzalez</option>
+                                        </select>
                                     </div>
+
                                 </div>
-                                <a href="salesList.html" class="btn btnSmall centerBtn btn-primary btn-user btn-block" onclick="alert('Se ha registrado la venta exitosamente');">
+                                <a href="salesList.html" class="btn btnSmall centerBtn btn-primary btn-user btn-block" data-target="#logoutModal1" data-toggle="modal" >
                                     Registrar venta
                                 </a>
-                                <hr>
-
+                               
 
                             </form>
 
@@ -401,27 +392,44 @@
                 <i class="fas fa-angle-up"></i>
             </a>
 
-            <!-- Logout Modal-->
-            <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-                aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
-                            <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">×</span>
-                            </button>
-                        </div>
-                        <div class="modal-body">Select "Logout" below if you are ready to end your current session.
-                        </div>
-                        <div class="modal-footer">
-                            <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                            <a class="btn btn-primary" href="login.html">Logout</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
+  <!-- Logout Modal-->
+  <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Cerrar Sesión</h5>
+              <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">×</span>
+              </button>
+          </div>
+          <div class="modal-body">Seleccione el botón "Cerrar Sesión" que aparece a continuación para finalizar‎.</div>
+          <div class="modal-footer">
+              <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancelar</button>
+              <a class="btn btn-primary" href="login.html">Cerrar Sesión</a>
+          </div>
+      </div>
+  </div>
+</div>
+<!-- Register Modal-->
+<div class="modal fade" id="logoutModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Registro de venta</h5>
+              <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">×</span>
+              </button>
+          </div>
+          <div class="modal-body">La venta se ha registrado exitosamente</div>
+          <div class="modal-footer">
+                <button class="btn btn-primary" type="button" href="salesList.html" data-dismiss="modal">Registrar otra venta</button>
+              <a class="btn btn-primary" href="salesList.html">Aceptar</a>
+          </div>
+      </div>
+  </div>
+</div>
             <!-- Bootstrap core JavaScript-->
             <script src="vendor/jquery/jquery.min.js"></script>
             <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
