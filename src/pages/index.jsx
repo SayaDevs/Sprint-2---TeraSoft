@@ -1,3 +1,4 @@
+import {Link} from "react-router-dom";
 import logo from 'logo.svg';
 import BarraNav from 'components/BarraNav';
 import TopBar from 'components/TopBar';
@@ -33,8 +34,8 @@ function Index() {
                     <div className="input-group-append">  */}
 
                     <div>
-                        <a href="addSale.html" className="btn btn-primary btn-circle btn-sm">
-                            <i href="addSale.html" className="fa fa-plus-circle fa-2x" aria-hidden="true"></i>
+                        <a href="/addsale" className="btn btn-primary btn-circle btn-sm">
+                            <i href="/addsale" className="fa fa-plus-circle fa-2x" aria-hidden="true"></i>
 
                         </a>
                     </div>
@@ -203,7 +204,7 @@ aria-hidden="true">
         </div>
         <div className="modal-body">La venta fue eliminada de forma permanente</div>
         <div className="modal-footer">
-            <a className="btn btn-primary" href="salesList.html">Aceptar</a>
+            <a className="btn btn-primary" href="/index">Aceptar</a>
         </div>
     </div>
 </div>
@@ -222,7 +223,7 @@ aria-hidden="true">
             </div>
             <div className="modal-body">¿Desea eliminar esta venta de forma permanente?</div>
             <div className="modal-footer">
-                  <button className="btn btn-secondary" type="button" href="salesList.html" data-dismiss="modal">Cancelar</button>
+                  <button className="btn btn-secondary" type="button" href="/index" data-dismiss="modal">Cancelar</button>
                 <a className="btn btn-danger" data-target="#logoutModal2" data-toggle="modal" data-dismiss="modal" aria-label="Close">Aceptar</a>
             </div>
         </div>
