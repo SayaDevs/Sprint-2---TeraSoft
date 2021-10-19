@@ -11,6 +11,7 @@ import ForgotPassword from "pages/forgotPassword";
 import Register from "pages/Register";
 import Login from "pages/Login";
 import ProductList from "pages/productsList";
+import AddProduct from "pages/addProduct";
 function App () {
     return (
         <div className="App">
@@ -36,6 +37,9 @@ function App () {
                     </Route>
                     <Route path="/productList"> 
                         <ProductList/> 
+                    </Route>
+                    <Route path="/addProduct"> 
+                        <AddProduct/> 
                     </Route>
                     
                 </Switch>

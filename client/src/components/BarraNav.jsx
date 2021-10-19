@@ -79,8 +79,8 @@ function BarraNav() {
                 <div id="collapsePages" className="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
                     <div className="bg-white py-2 collapse-inner rounded">
                         <h6 className="collapse-header">Gestionar Productos:</h6>
-                        <a className="collapse-item" href="productsList.html">Listar Producto</a>
-                        <a className="collapse-item" href="addProduct.html">Agregar Producto</a>
+                        <a className="collapse-item" href="/productList">Listar Producto</a>
+                        <a className="collapse-item" href="/addProduct">Agregar Producto</a>
                         <a className="collapse-item" href="editProduct.html">Editar Producto</a>
                     </div>
                 </div>
