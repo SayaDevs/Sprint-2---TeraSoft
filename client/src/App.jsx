@@ -12,6 +12,7 @@ import Register from "pages/Register";
 import Login from "pages/Login";
 import ProductList from "pages/productsList";
 import AddProduct from "pages/addProduct";
+import EditProduct from "pages/editProduct";
 function App () {
     return (
         <div className="App">
@@ -40,6 +41,9 @@ function App () {
                     </Route>
                     <Route path="/addProduct"> 
                         <AddProduct/> 
+                    </Route>
+                    <Route path="/editProduct"> 
+                        <EditProduct/> 
                     </Route>
                     
                 </Switch>

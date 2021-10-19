@@ -57,7 +57,7 @@ function productsList(){
                                                 <td>5</td>
                                                 <td>Nuevo</td>
                                                 <td>
-                                                    <a href="editProduct.html" className="btn btn-primary btn-circle btn-sm">
+                                                    <a href="/editProduct" className="btn btn-primary btn-circle btn-sm">
                                                         <span className="fas fa-pencil-alt fa-lg" aria-hidden="true"></span>
                                                     </a>
                                                     

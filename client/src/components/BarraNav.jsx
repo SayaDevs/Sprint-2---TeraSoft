@@ -81,7 +81,7 @@ function BarraNav() {
                         <h6 className="collapse-header">Gestionar Productos:</h6>
                         <a className="collapse-item" href="/productList">Listar Producto</a>
                         <a className="collapse-item" href="/addProduct">Agregar Producto</a>
-                        <a className="collapse-item" href="editProduct.html">Editar Producto</a>
+                        <a className="collapse-item" href="/editProduct">Editar Producto</a>
                     </div>
                 </div>
             </li>
