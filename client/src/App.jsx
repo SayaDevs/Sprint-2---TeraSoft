@@ -10,6 +10,7 @@ import AddSale from "pages/AddSale";
 import ForgotPassword from "pages/forgotPassword";
 import Register from "pages/Register";
 import Login from "pages/Login";
+import ProductList from "pages/productsList";
 function App () {
     return (
         <div className="App">
@@ -32,6 +33,9 @@ function App () {
                     </Route>
                     <Route path="/login"> 
                         <Login/> 
+                    </Route>
+                    <Route path="/productList"> 
+                        <ProductList/> 
                     </Route>
                     
                 </Switch>
